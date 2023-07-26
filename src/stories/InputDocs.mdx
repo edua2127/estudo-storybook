@@ -1,0 +1,46 @@
+import { Meta, Description, Story } from '@storybook/blocks';
+import * as InputStories from "./Input.stories"
+import Input from './Input';
+
+<Meta of={InputStories} />
+
+# Descrição geral do componente
+
+<Description of={InputStories} />
+
+# Default
+
+<Story name="Default" args={{ tipoPassado:"texto",  name:"", id:"", placeholder:""}}>
+  {(args) => <Input {...args} />}
+</Story>
+
+{/* mostra a descricao de Default */}
+<Description of={InputStories.Default} />
+
+
+# Date
+
+<Story name="Date" args={{ tipoPassado:"data",  name:"", id:"", placeholder:""}}>
+  {(args) => <Input {...args} />}
+</Story>
+
+{/* mostra a descricao de Date*/}
+<Description of={InputStories.Date} />
+
+# Email
+
+<Story name="Email" args={{ tipoPassado:"email",  name:"", id:"", placeholder:""}}>
+  {(args) => <Input {...args} />}
+</Story>
+
+{/*mostra a descricao de Email*/}
+<Description of={InputStories.Email} />
+
+# Password
+
+<Story name="Password" args={{ tipoPassado:"senha",  name:"", id:"", placeholder:""}}>
+  {(args) => <Input {...args} />}
+</Story>
+
+{/* mostra a descricao de Password*/}
+<Description of={InputStories.Password} />
